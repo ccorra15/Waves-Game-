@@ -67,7 +67,9 @@ public class KeyInput extends KeyAdapter{
 		
 		int key = e.getKeyCode();
 		
-		for(GameObject x: handler.object) {
+		for(int i = 0; i < handler.object.size(); i++) {
+			
+			GameObject x = handler.object.get(i);
 			
 			if(x.getID() == ID.Player) {
 				

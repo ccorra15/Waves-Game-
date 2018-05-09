@@ -41,6 +41,14 @@ public class Player extends GameObject{
 					
 					HUD.health -= 5;
 					
+					if(HUD.health == 0) {
+						Sound.die();
+						System.exit(0);
+						
+					}
+					
+					Sound.hit();	
+					
 				}
 				
 			}

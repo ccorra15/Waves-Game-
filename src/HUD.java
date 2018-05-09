@@ -5,7 +5,6 @@ public class HUD {
 
 	public static float health = 180;
 	private float green = 255;
-	
 	private int score = 0;
 	private int level = 1;
 	

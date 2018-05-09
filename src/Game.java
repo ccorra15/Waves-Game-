@@ -26,6 +26,7 @@ public class Game extends Canvas implements Runnable{
 		spawnner = new Spawnner(handler, hud);
 		
 		Random r = new Random();
+		Sound.levels1();
 	
 		handler.addObject(new Player(370, 250, ID.Player, handler));
 		handler.addObject(new HorizontalEnemy(10, 250, ID.HorizontalEnemy, handler));

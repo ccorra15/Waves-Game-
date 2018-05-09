@@ -20,10 +20,10 @@ public class Handler {
 	
 	public void render(Graphics g) {
 		
-		for(GameObject x: object) {
+		for(int i = 0; i < object.size(); i++) {
 			
+			GameObject x = object.get(i);
 			x.render(g);
-			
 		}
 		
 	}
